@@ -65,7 +65,7 @@
                         <div class="layui-form-item input">
                             <!-- <label class="layui-icon layui-icon-username"></label> -->
                             <img src="./images/icon_username.svg" class="icon" />
-                            <input type="text" name="username" placeholder="请输入手机号/邮箱/用户名" autocomplete="off" class="layui-input">
+                            <input type="text" name="username" placeholder="请输入手机号/邮箱" autocomplete="off" class="layui-input">
                         </div>
                         <div class="layui-form-item input">
                             <img src="./images/icon_password_new.svg" class="icon" />
@@ -162,7 +162,7 @@
             form.on('submit(login)', function(data) {
                 data = data.field;
                 if (data.username.length<6) {
-                    layer.msg('用户名长度为6-20位', {
+                    layer.msg('账号不能少于6位', {
                         time: 1000
                     });
                     return false;

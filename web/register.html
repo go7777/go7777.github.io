@@ -36,7 +36,7 @@
         <div class="form-body">
           <div class="layui-form-item input">
             <img src="./images/icon_username.svg" class="icon" />
-            <input type="text" name="username" placeholder="请输入您的手机号" autocomplete="off" class="layui-input">
+            <input type="text" name="username" placeholder="请输入手机号/邮箱/用户名" autocomplete="off" class="layui-input">
           </div>
           <div class="layui-form-item input">
             <img src="./images/icon_password_new.svg" class="icon" />
@@ -104,12 +104,12 @@
       data.type = 0;
       data.username = $("input[name='username']").val();
 
-      if (!/^1\d{10}$/.test(data.username)) {
-        layer.msg('手机号格式有误', {
+      if (!data.username || data.username.length < 6) {
+        layer.msg('账号不能少于6位', {
           time: 1000
         });
         return false;
-      };
+      }
 
       axios({
         "method": "POST",
@@ -133,8 +133,8 @@
 
     form.on('submit(register)', function(data) {
       data = data.field;
-      if (!/^1\d{10}$/.test(data.username)) {
-        layer.msg('手机号格式有误', {
+      if (!data.username || data.username.length < 6) {
+        layer.msg(\'账号不能少于6位\', {
           time: 1000
         });
         return false;

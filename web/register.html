@@ -134,7 +134,7 @@
     form.on('submit(register)', function(data) {
       data = data.field;
       if (!data.username || data.username.length < 6) {
-        layer.msg(\'账号不能少于6位\', {
+        layer.msg('账号不能少于6位', {
           time: 1000
         });
         return false;

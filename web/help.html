@@ -174,10 +174,13 @@
                                         <div class="btns">第一步</div>
                                     </div>
                                     <div>
-                                        打开 App Store ，点击<span><右上角图标></span>千万别在 iCloud 页面和设置页面登录！否则，<span style="color: #DD2828;">"手机会变砖"</span>
+                                        前往 <设置>，退出现在的 Apple ID<br/>
+                                        1. 打开 <设置>，点击最上方 Apple 账户，千万不要在这里操作账户，避免被锁<br/>
+                                        2. 点击 <媒体与购买项目>，退出现在的Apple ID<br/>
+                                        3. 选择 <退出登录>
                                     </div>
                                 </div>
-                                <img src="images/22.png" />
+                                <img src="images/buzou1.png" />
                             </div>
                             <div class="step">
                                 <div>
@@ -185,11 +188,18 @@
                                         <div class="btns">第二步</div>
                                     </div>
                                     <div>
-                                        选择<span><退出登录></span>,记得一定要滑到页面底部才能看到；
+                                        <p>
+                                        1. 再次点击 <媒体与购买项目>，不登入原账户<br/>
+                                        2. 点击下方按钮获取<Apple ID> 和 <密码>，完成登录<br/>
+                                        
+                                        </p>
                                     </div>
                                 </div>
-                                <img src="images/19.png" />
+                                <img src="images/buzou2.png" />
                             </div>
+                            <button class="nyDNtza" style="width: 100%;" onclick="gotoPublicAppleId()">获取公开Apple ID<span style="color: red;">(请使用美国/新加坡/香港ID)</span></button>
+                            <button class="nyDNtza" style="width: 100%;" onclick="gotoPublicAppleId1()">获取公开Apple ID(备用)<span style="color: red;">(请使用美国/新加坡/香港ID)</span></button>
+              
                             <div class="step">
                                 <div>
                                     <div>
@@ -212,24 +222,11 @@
                                 </div>
                                 <img src="images/25.png" />
                             </div>
+                            
                             <div class="step">
                                 <div>
                                     <div>
                                         <div class="btns">第五步</div>
-                                    </div>
-                                    <div>
-                                        使用下方的 <span><公共 Apple ID></span><span style="color: #DD2828;">按照前面的四个步骤进行登录</span>， 注意密码大小写，建议直接复制粘贴；<br />
-                                    </div>
-                                    <div style="color: #DD2828;">(若发现公共Apple ID都不可用，请联系客服获取最新ID)</div>
-                                </div>
-                                <img src="images/20.png" />
-                            </div>
-                            <button onclick="toPublicAppleId()">获取公开Apple ID</button>
-
-                            <div class="step">
-                                <div>
-                                    <div>
-                                        <div class="btns">最后一步</div>
                                     </div>
                                     <div>
                                         当发现商店内容变为繁体内容后证明您已经切换到香港地区了；此时您可以点击下方按钮直接下载Outline，或在商店中搜索<span>&lt;Outline&gt;</span>自行下载；
@@ -238,6 +235,19 @@
                                 
                             </div>
                             <button onclick="toAppStore()">下载Outline</button>
+
+                            <div class="step">
+                                <div>
+                                <div>
+                                    <div class="btns">最后一步</div>
+                                </div>
+                                <div>
+                                    <p>下载完成后，前往 <设置>，进入 <Apple 账户> → <媒体与购买项目>，点击 <退出登录> 退出公共 ID，然后再登录自己的 ID</p><br>
+                                    <p>千万不要忘记登出公共 ID，长时间登录有风险</p> <br>
+                                </div>
+                                </div>
+                                <img src="images/buzou1.png" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -302,6 +312,9 @@
         }
         function toPublicAppleId(){
             window.open('https://7iid.com/share/OqkHzrfZKU','_blank');
+        }
+        function gotoPublicAppleId1(){
+            window.open('https://appark.ai/cn/us-appleid-shared','_blank');
         }
     </script>
 </div>

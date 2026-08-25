@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>公开账号</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<canvas id="bgCanvas" style="position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+<article class="dk Huans">
+    <section class="Hdlog Huans flexC">
+        <p>使用公开账号下载</p>
+    </section>
+    <section class="nyDK Huans">
+        <div class="nyDD nyDzy">
+            <div class="nyDT Huans">注意1</div>
+            <div class="nyDN">
+                <p>千万别在 iCloud 页面和设置页面登录!这会导致您的App Store 和 iTunes Store 被停用 或 锁定，最严重会导致<span class="color2">“手机会变砖”</span></p>
+                <div class="nyDimg"><img src="images/3T01.jpg"></div>
+            </div>
+        </div>
+        <div class="nyDD nyDzy">
+            <div class="nyDT Huans">注意2</div>
+            <div class="nyDN">
+                <p>若提示需要 <span class="color2">电话号码验证</span>，代表您操作错误，请仔细查看教程的第三步与第四步</p>
+                <div class="nyDimg"><img src="images/3T02.jpg"></div>
+            </div>
+        </div>
+
+        <div class="nyDD">
+            <div class="nyDT Huans" style="width: auto;text-align: left;">第一步:前往 <设置>，退出现在的 Apple ID</div>
+            <div class="nyDN">
+                <p>
+                    1. 打开 <设置>，点击最上方 Apple 账户，千万不要在这里操作账户，避免被锁<br/>
+                    2. 点击 <媒体与购买项目>，退出现在的Apple ID<br/>
+                    3. 选择 <退出登录>
+                </p>
+                <div class="nyDimg"><img src="images/buzou1.png"></div>
+            </div>
+        </div>
+        <div class="nyDD">
+            <div class="nyDT Huans" style="width: auto;text-align: left;">第二步:登录 <公共的 Apple ID></div>
+            <div class="nyDN">
+                <p>
+                    1. 再次点击 <媒体与购买项目>，不登入原账户
+                    2. 点击下方按钮获取<Apple ID> 和 <密码>，完成登录
+                    <a class="nyDNtza" style="width: 100%;" onclick="gotoPublicAppleId()">获取公开Apple ID<span style="color: red;">(请使用美国/新加坡/香港ID)</span></a>
+                    <a class="nyDNtza" style="width: 100%;" onclick="gotoPublicAppleId1()">获取公开Apple ID(备用)<span style="color: red;">(请使用美国/新加坡/香港ID)</span></a>
+                </p>
+                <div class="nyDimg"><img src="images/buzou2.png"></div>
+            </div>
+        </div>
+        <div class="nyDD">
+            <div class="nyDT Huans">第三步:</div>
+            <div class="nyDN">
+                <p>登录ID后，会弹出AppleID安全页面，切记，请点击<span class="color1">&lt;其他选项&gt;</span>若没有此提示请忽略；</p>
+                <div class="nyDimg"><img src="images/3T03.jpg"></div>
+            </div>
+        </div>
+        <div class="nyDD">
+            <div class="nyDT Huans">第四步:</div>
+            <div class="nyDN">
+                <p>在弹出的弹窗中选择<span class="color1">&lt;不升级&gt;</span>，若没有此提示请忽略;</p>
+                <div class="nyDimg"><img src="images/3T04.jpg"></div>
+            </div>
+        </div>
+    
+        <div class="nyDD">
+            <div class="nyDT Huans">第五步:</div>
+            <div class="nyDN">
+                <p>当发现商店内容变为繁体内容后证明您已经切换到香港地区了;</p><br>
+                <p>此时您可以点击下方按钮直接下载，或在商店中自行搜索<span class="color1">&lt;Starry Kit&gt;</span>进行下载;</p><br>
+                <a href="javascript:;" onclick="appstore()" class="nyDNtza">跳转 App store 下载</a>
+            </div>
+        </div>
+        <div class="nyDD">
+            <div class="nyDT Huans">最后一步:</div>
+            <div class="nyDN">
+                <p>下载完成后，前往 <设置>，进入 <Apple 账户> → <媒体与购买项目>，点击 <退出登录> 退出公共 ID，然后再登录自己的 ID</p><br>
+                <p>千万不要忘记登出公共 ID，长时间登录有风险</p> <br>
+                <div class="nyDimg"><img src="images/buzou1.png"></div>
+            </div>
+        </div>
+    </section>
+</article>
+<script>
+    function gotoPublicAppleId(){
+        window.open('https://7iid.com/share/OqkHzrfZKU','_blank');
+    }
+    function gotoPublicAppleId1(){
+        window.open('https://appark.ai/cn/us-appleid-shared','_blank');
+    }
+</script>
+<script>
+(function(){
+    var c=document.getElementById("bgCanvas");
+    if(!c)return;
+    var x=c.getContext("2d"),W,H,pts=[],raf,N=45,A="38,204,196";
+    function resize(){W=c.width=innerWidth;H=c.height=innerHeight;}
+    function mk(){return{x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.8+.8,a:Math.random()*.22+.06};}
+    function init(){resize();pts=[];for(var i=0;i<N;i++)pts.push(mk());}
+    function frame(){
+        x.clearRect(0,0,W,H);
+        pts.forEach(function(p){
+            p.x+=p.vx;p.y+=p.vy;
+            if(p.x<0)p.x=W;if(p.x>W)p.x=0;
+            if(p.y<0)p.y=H;if(p.y>H)p.y=0;
+            x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);
+            x.fillStyle="rgba("+A+","+p.a+")";x.fill();
+        });
+        for(var i=0;i<pts.length-1;i++){
+            for(var j=i+1;j<pts.length;j++){
+                var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);
+                if(d<130){
+                    x.beginPath();x.moveTo(pts[i].x,pts[i].y);x.lineTo(pts[j].x,pts[j].y);
+                    x.strokeStyle="rgba("+A+","+(1-d/130)*.08+")";
+                    x.lineWidth=.7;x.stroke();
+                }
+            }
+        }
+        raf=requestAnimationFrame(frame);
+    }
+    window.addEventListener("resize",init);
+    init();frame();
+})();
+
+function appstore(){
+    window.open('https://apps.apple.com/app/id6749743412','_blank')
+}
+</script>
+</body>
+
+
+</html>

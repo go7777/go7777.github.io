@@ -2,7 +2,7 @@
 - - - -
 #### 请在浏览器内打开
 
-**:arrow_double_down: [Android v4.4.0.apk](https://github.com/xiyogo7777u88/go7777.github.io/releases/download/hudun-latest-apk/hudun-v4.4.0-19.apk)**
+**:arrow_double_down: [Android v4.4.0.apk](https://github.com/go7777/go7777.github.io/releases/download/hudun-latest-apk/hudun-v4.4.0-19.apk)**
 
 **:arrow_double_down: [iOS网页版(建议优选海外商店下载）](./web/index.html)** 
 

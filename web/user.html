@@ -15,11 +15,11 @@
         <div class="info-row">
           <div class="info-copy">
             <div class="info-line">
-              <span class="info-label">手机号：</span>
+              <span class="info-label">账号：</span>
               <span class="info-value phone-value"></span>
             </div>
           </div>
-          <button class="copy-icon action-copy-phone" type="button" aria-label="复制手机号"><img src="images/copy.png" alt=""></button>
+          <button class="copy-icon action-copy-phone" type="button" aria-label="复制账号"><img src="images/copy.png" alt=""></button>
         </div>
       </div>
     </div>
@@ -242,7 +242,7 @@
         userInfo.expire_time = userInfo.created;
       }
 
-      let phoneValue = userInfo.mobile || userInfo.phone || userInfo.username || '-';
+      let phoneValue = userInfo.username || '-';
       let uidValue = userInfo.uid || userInfo.id || '-';
 
       $(".layuimini-main-user .uid").text(uidValue);

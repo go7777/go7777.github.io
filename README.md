@@ -6,7 +6,7 @@
 
 **:arrow_double_down: [iOS网页版(建议优选海外商店下载）](./web/index.html)** 
 
-**:arrow_double_down: [iOS 海外商店版本](./help/index.html)**
+<!-- **:arrow_double_down: [iOS 海外商店版本](./help/index.html)** -->
 
 **:arrow_double_down: [Windows v2.6.0.exe](https://github.com/go7777/go7777.github.io/releases/download/hudun-latest-exe/hudun-v2.6.0-56.exe)**
 

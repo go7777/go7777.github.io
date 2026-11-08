@@ -96,7 +96,7 @@
                         <!-- outline方案已经停止使用，请使用iOS客户端<br/> -->
                          请使用iPhone手机访问<br/>
                     </div>
-                    <!-- <button class="toLoginHelp" style="margin-top: 15px;width: 295px;height: 40px; color: white;border-radius: 2px;">AppStore下载教程</button> -->
+                    <button class="toLoginHelp" style="margin-top: 15px;width: 295px;height: 40px; color: white;border-radius: 2px;">我已了解</button>
                 </div>
             </div>
         </div>
@@ -144,7 +144,8 @@
             layui.data('warning',{key:"info",value: 0});
 
             $(".login-warning-show .toLoginHelp").on('click', function(){
-                goNewEnter()
+                // goNewEnter()
+                $(".login-warning-show").hide();
             })
 
             const container = document.querySelector(".marquee-container");
